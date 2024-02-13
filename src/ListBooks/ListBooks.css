@@ -1,12 +1,11 @@
 .countainer-FatherList{
     position: absolute;
-    border: 1px solid white;
-    width: 95%;
-    height: 100% auto;
+    border: 1px solid rgb(118, 108, 108);
+    width: 97%;
+    height:max-content;
     border-radius: 10px;
     padding: 1rem;
     top: 4rem;
-    overflow: hidden;
 }
 
 .countainer-ListBooks{
@@ -14,13 +13,14 @@
     width: 45%;
     display: flex;
     justify-content:space-around ;
-    margin: 0 auto;
-    top: 10rem;
+    margin: auto;
+    top: 12rem;
     left: -25%;
 }
 
 .cover-image{
     width: 120px;
     height: 170px;
-    padding: .5rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
 }

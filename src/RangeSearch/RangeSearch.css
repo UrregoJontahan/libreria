@@ -1,0 +1,41 @@
+.countainer-range{
+    display: flex;
+    position: relative;
+    left: 7rem;
+    top: 4rem;
+}
+
+.text-range{
+  color: white;
+  position: relative;
+  display: flex;
+  bottom: 6rem;
+  font-family: 'Shadows Into Light',cursive;
+  font-size: 30px;
+}
+
+.range{
+        -webkit-appearance: none; 
+        position: relative;
+        display: flex;
+        right: 12rem;
+        top: .5rem;
+        width: 10%; 
+        height: 1px; 
+        background: white; 
+        outline: none; 
+        opacity: 0.7;
+        margin: 0; 
+        border-radius: 2px; 
+      }
+      
+      
+    .range::-webkit-slider-thumb {
+        -webkit-appearance: none; 
+        width: 12px; 
+        height: 10px; 
+        background: white; 
+        border-radius: 50%; 
+        cursor: pointer; 
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); 
+      }

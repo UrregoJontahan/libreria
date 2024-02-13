@@ -23,7 +23,7 @@ function InputSearch(){
 
     return(
          <div className="countainer-search">
-         <span className="text-input-searh">filtrar por genero 
+         <span className="text-input-searh">filtrar por género 
           <div className="buttonList">
             <select 
               id="bookInput"

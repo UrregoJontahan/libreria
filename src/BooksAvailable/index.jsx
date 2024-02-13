@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./BooksAvailable.css"
+import { GetDataApi } from "../GetDataApi";
 
-function BooksAviable({available}){
+function BooksAviable(){
+
+    const [total,setTotal]=React.useState([])
+    
+    useEffect(()=>{
+        const LengthBooks=async()=>{
+            const totalBooks= await GetDataApi()
+            setTotal(totalBooks)
+        }
+        LengthBooks()
+    },[])
+
     return(
         <h2 
             className="BooksAviable">
-            libros disponibles
+            {total.length} libros disponibles
         </h2>
     )
 }

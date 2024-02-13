@@ -4,6 +4,7 @@ import { InputSearch } from './BookSearch';
 import { Counter } from "./Counter"
 import { BooksAviable } from "./BooksAvailable";
 import { ListBooksApi } from './ListBooks';
+import { RangeSearch } from './RangeSearch';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <InputSearch/>
       <BooksAviable/>
       <ListBooksApi/>
+      <RangeSearch/>
     </React.Fragment>
   )
 }
