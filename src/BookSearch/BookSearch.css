@@ -1,0 +1,22 @@
+.countainer-search{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    left: 6rem;
+    top: 11.5rem;
+    z-index: 5;
+}
+
+#bookInput{
+    width: 50%;
+    background-color: black;
+    color: white;
+    font-family: 'Shadows Into Light',cursive;
+    font-size: 15px;
+    border-radius: 0;
+
+}
+.text-input-searh{
+    color: white;
+    font-family: 'Shadows Into Light',cursive;
+}
