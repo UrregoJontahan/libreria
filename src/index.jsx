@@ -13,8 +13,8 @@ function App() {
       <Counter/>
       <InputSearch/>
       <BooksAviable/>
-      <ListBooksApi/>
       <RangeSearch/>
+      <ListBooksApi/>
     </React.Fragment>
   )
 }

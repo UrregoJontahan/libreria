@@ -14,8 +14,8 @@
     display: flex;
     justify-content:space-around ;
     margin: auto;
-    top: 12rem;
     left: -25%;
+    padding-top: 12rem;
 }
 
 .cover-image{

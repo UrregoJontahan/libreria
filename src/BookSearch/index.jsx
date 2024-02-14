@@ -19,6 +19,7 @@ function InputSearch(){
 
     const GenreBooksInput=(e)=>{
         setSelectBook(e.target.value)
+        console.log(e.target.value)
     }
 
     return(
