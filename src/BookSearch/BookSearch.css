@@ -2,21 +2,25 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    left: 24%;
-    top: 13rem;
+    left: 23%;
+    bottom: 6rem;
     z-index: 5;
-    font-size: 30px;
+    font-size: 25px;
+    z-index: 111;
 }
 
 #bookInput{
+    z-index: 100;
     background-color: black;
     color: white;
     font-family: 'Shadows Into Light',cursive;
     font-size: 15px;
     border-radius: 0;
     width: 9rem;
+    height: 1.5rem;
 }
 .text-input-searh{
     color: white;
     font-family: 'Shadows Into Light',cursive;
 }
+

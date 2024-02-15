@@ -1,25 +1,16 @@
 import "./ListBooks.css"
 import React from "react"
-import { useEffect } from "react"
-import { GetDataApi } from "../GetDataApi"
 
-function ListBooksApi({children}){
-    const[img,setImg]=React.useState([])
-
-    useEffect(()=>{
-        const ImgBooks=async()=>{
-            const imgData= await GetDataApi()
-            setImg(imgData)
-        }
-        ImgBooks()
- 
-    },[])
-
+function ListBooksApi({listbooks}){
     return(
         <div className="max-countainer">
-            {children}
+            <div className="countainer-ListBooks">
+                {listbooks.map(book =>(
+                    <img className="cover-image" key={book.id} src={book.cover_image} />
+                ))}
+            </div>
         </div>
         )
-}
+} 
 
 export { ListBooksApi }
