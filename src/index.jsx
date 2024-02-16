@@ -21,7 +21,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Counter/>
+      <Counter TotalBooks={clonedImg.length}/>
       <BooksAviable total={listBooks.length}/>
       <RangeSearch setBookList={setListBooks}/>
       <InputSearch setbooklist={setListBooks}/>
