@@ -1,7 +1,7 @@
 .countainer-range{
   position: relative;
   display: flex;
-  padding-top: 7rem;
+  padding-top: 8rem;
   z-index: 3;
   left: 2rem;
 }
@@ -10,19 +10,19 @@
 color: white;
 position: relative;
 display: flex;
-bottom: 1.9rem;
+bottom: 3rem;
 font-family: 'Shadows Into Light',cursive;
-font-size: 25px;
-left: 6.5rem;
+font-size: 30px;
+left: 6rem;
 }
 
 .range{
       -webkit-appearance: none; 
       position: relative;
       display: flex;
-      right: 3rem;
+      right: 5rem;
       top: 3rem;
-      width: 10%; 
+      width: 15%; 
       height: 1px; 
       background: white; 
       outline: none; 
@@ -37,8 +37,9 @@ left: 6.5rem;
       -webkit-appearance: none; 
       width: 12px; 
       height: 10px; 
-      background: white; 
+      background: rgba(63, 62, 62, 0.523); 
       border-radius: 50%; 
+      border: 1px solid white;
       cursor:pointer; 
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); 
     }

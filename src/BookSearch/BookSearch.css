@@ -2,10 +2,10 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    left: 23%;
-    bottom: 6rem;
+    left: 29%;
+    bottom: 8.7rem;
     z-index: 5;
-    font-size: 25px;
+    font-size: 30px;
     z-index: 111;
 }
 
@@ -16,8 +16,8 @@
     font-family: 'Shadows Into Light',cursive;
     font-size: 15px;
     border-radius: 0;
-    width: 9rem;
-    height: 1.5rem;
+    width: 11rem;
+    height: 1.8rem;
 }
 .text-input-searh{
     color: white;

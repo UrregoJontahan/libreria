@@ -33,14 +33,17 @@ function InputSearch({setbooklist}){
          <div className="countainer-search">
          <span className="text-input-searh">filtrar por género 
           <div className="buttonList">
-            <select 
+            <select
               id="bookInput"
               onChange={GenreBooksInput}
               value={selectBook}
             >
               <option value="">Todas</option>
               {genres.map((genre) => (
-                <option value={genre}>
+                <option 
+                value={genre}
+                
+                >
                   {genre}
                 </option>
               ))}

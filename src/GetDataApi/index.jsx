@@ -6,4 +6,4 @@ async function GetDataApi(){
 
 }
 
-export {GetDataApi}
+export {GetDataApi} 

@@ -5,17 +5,34 @@ import { Counter } from "./Counter"
 import { BooksAviable } from "./BooksAvailable";
 import { ListBooksApi } from './ListBooks';
 import { RangeSearch } from './RangeSearch';
+import { SelectedBooks } from './SelectedBooks';
 
 function App() {
   
   const [listBooks, setListBooks] = useState([])
+  const [clonedImg,setClonedImg]=React.useState([])
+
+    const handelImageClick=(SelectedBook)=>{
+      if(!clonedImg.find((img)=>img.id ===SelectedBook.id)){
+        setClonedImg([...clonedImg,SelectedBook])
+
+      }
+    }
+
   return (
     <React.Fragment>
       <Counter/>
       <BooksAviable total={listBooks.length}/>
       <RangeSearch setBookList={setListBooks}/>
       <InputSearch setbooklist={setListBooks}/>
-      <ListBooksApi listbooks={listBooks}/>
+      <ListBooksApi 
+        listbooks={listBooks}
+        onSelectImg={handelImageClick}  
+      />
+      <SelectedBooks
+        clonedImg={clonedImg}
+        inLIst={clonedImg.length}
+      />
     </React.Fragment>
   )
 }

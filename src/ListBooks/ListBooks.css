@@ -1,4 +1,4 @@
-.max-countainer{
+.max-container{
     position: absolute;
     border: 1px solid rgb(118, 108, 108);
     width: 96%;
@@ -8,20 +8,20 @@
     top: 3rem;
 }
 
-.countainer-ListBooks{
+.container-ListBooks{
     position: relative;
-    width: 45%;
+    width: 70%;
     display: flex;
     flex-flow: row wrap;
     box-sizing: border-box;
     margin: auto;
     padding-top: 10rem;
-    right: 19rem;
+    right: 8rem;
 }
 
 .cover-image{
-    width: 120px;
-    height: 170px;
+    width: 180px;
+    height: 240px;
     padding-top: 2rem; 
     padding-left: 1rem;
 }

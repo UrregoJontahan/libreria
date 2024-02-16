@@ -1,12 +1,17 @@
 import "./ListBooks.css"
 import React from "react"
 
-function ListBooksApi({listbooks}){
+function ListBooksApi({listbooks,onSelectImg}){
     return(
-        <div className="max-countainer">
-            <div className="countainer-ListBooks">
+        <div className="max-container">
+            <div className="container-ListBooks">
                 {listbooks.map(book =>(
-                    <img className="cover-image" key={book.id} src={book.cover_image} />
+                    <img 
+                        className="cover-image" 
+                        key={book.id} 
+                        src={book.cover_image}
+                        onClick={()=>onSelectImg(book)}
+                        />
                 ))}
             </div>
         </div>
