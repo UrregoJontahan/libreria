@@ -1,7 +1,7 @@
 import React from "react";
 import "./SelectedBooks.css"
 
-function SelectedBooks({clonedImg,inLIst}){
+function SelectedBooks({clonedImg,inLIst,onRemove}){
 
     if(!inLIst){
         return false
@@ -16,7 +16,8 @@ function SelectedBooks({clonedImg,inLIst}){
                         <img 
                             key={i}
                             src={img.cover_image} 
-                            className="cloned-cover-img"    
+                            className="cloned-cover-img" 
+                            onClick={()=>onRemove(i)}   
                         />
                     ))}
                 </div>

@@ -19,8 +19,14 @@ function App() {
       }
     }
 
+    const handelRemoveImage=(index)=>{
+        const removeImage=[...clonedImg]
+        removeImage.splice(index,1)
+        setClonedImg(removeImage)
+    }
+
   return (
-    <React.Fragment>
+    <React.Fragment> 
       <Counter TotalBooks={clonedImg.length}/>
       <BooksAviable total={listBooks.length}/>
       <RangeSearch setBookList={setListBooks}/>
@@ -32,6 +38,7 @@ function App() {
       <SelectedBooks
         clonedImg={clonedImg}
         inLIst={clonedImg.length}
+        onRemove={handelRemoveImage}
       />
     </React.Fragment>
   )
